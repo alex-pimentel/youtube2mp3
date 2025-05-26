@@ -1,0 +1,205 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#toggle-dark-mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin-top: 40px;;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#urlInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+#addButton, #selectFolderButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+#addButton:hover, #selectFolderButton:hover {
+    background-color: #0056b3;
+}
+
+.folder-selection {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#selectFolderButton {
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#outputFolderDisplay {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.ffmpeg-note {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#queueTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#queueTable th, #queueTable td {
+    border: 1px solid #777;
+    padding: 8px;
+    text-align: left;
+}
+
+#queueTable th {
+    background-color: #e9ecef;
+}
+
+#queueTable td .progress-bar-container {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 18px; /* Altura da barra */
+}
+
+#queueTable td .progress-bar {
+    height: 100%;
+    background-color: #28a745; /* Verde para progresso */
+    width: 0%; /* Começa em 0 */
+    text-align: center;
+    line-height: 18px; /* Centraliza texto na barra */
+    color: white;
+    font-size: 0.8em;
+    transition: width 0.2s ease-in-out;
+}
+#queueTable td .progress-bar.converting {
+    background-color: #ffc107; /* Amarelo para conversão */
+    color: #333;
+}
+
+
+.status-Pendente { color: #6c757d; }
+.status-Baixando { color: #007bff; }
+.status-Convertendo { color: #fd7e14; }
+.status-Concluído { color: #28a745; }
+.status-Erro { color: #dc3545; font-weight: bold; }
+
+.action-button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.action-button:hover {
+    background-color: #f0f0f0;
+}
+
+#notifications {
+    margin-bottom: 15px;
+}
+.notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+}
+.notification.error { background-color: #dc3545; }
+.notification.success { background-color: #28a745; }
+.notification.info { background-color: #17a2b8; }
+.notification .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #ddd;
+}
+body.dark-mode #selectFolderButton, body.dark-mode #addButton {
+    background-color: #895cad;
+}
+
+body.dark-mode #urlInput {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+body.dark-mode #queueTable th {
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode #queueTable td {
+    border: 1px solid #555;
+}
+
+body.dark-mode #queueTableBody tr:nth-child(odd) {
+    background-color: #555;
+}
