@@ -1,7 +1,7 @@
 # YouTube2MP3
-  
-[Download Windows Standalone](releases/1.0.0/win/YT2MP3-standalone.exe)  
-[Download Windows Installer](releases/1.0.0/win/YT2MP3-setup.exe)  
+
+<a href="https://github.com/alex-pimentel/youtube2mp3/raw/main/releases/1.0.0/win/YT2MP3-standalone.exe" download>Download Windows Standalone</a>  
+<a href="https://github.com/alex-pimentel/youtube2mp3/raw/main/releases/1.0.0/win/YT2MP3-setup.exe" download>Download Windows Installer</a>  
 
 
 YouTube2MP3 is a simple application designed to convert YouTube videos to MP3 audio files. This tool provides an easy way to extract audio from YouTube content for personal use.
